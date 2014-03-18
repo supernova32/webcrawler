@@ -12,5 +12,8 @@ describe Webcrawler do
     it 'should count the number of js files' do
       @crawler.total_js.size.should eq 13
     end
+    it 'should fill children' do
+      @crawler.children.size.should eq 14
+    end
   end
 end
